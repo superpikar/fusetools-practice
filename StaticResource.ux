@@ -1,0 +1,9 @@
+<Panel ux:Class="StaticResources">
+	<float4 ux:Global="BorderColor" ux:Value="#333" />
+	
+	<Font ux:Global="BaseFont" File="Assets/Fonts/Nunito-Bold.ttf" />
+	<Font ux:Global="BoldFont" File="Assets/Fonts/Nunito-Black.ttf" />
+	
+	<Text ux:Class="BaseText" Font="BaseFont" FontSize="14" Color="#222" />
+	<BaseText ux:Class="BoldText" Font="BoldFont" /> 
+</Panel>

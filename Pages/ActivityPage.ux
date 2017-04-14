@@ -1,0 +1,18 @@
+<BasePage ux:Class="ActivityPage">
+	<JavaScript>
+		exports.gotoActivity = function() {
+			router.push("activity");
+		}
+	</JavaScript>
+
+	<Router ux:Dependency="router" />
+	<Visual ux:Dependency="navBar" />
+
+	<NavBarTitle navBar="navBar" BoldText="TODAY:" Text="RUNNING" />
+
+	<ScrollView>
+		<StackPanel>
+			<Text>this is activitypage</Text>
+		</StackPanel>
+	</ScrollView>
+</BasePage>

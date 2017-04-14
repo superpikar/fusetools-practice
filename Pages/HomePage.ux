@@ -1,0 +1,25 @@
+<BasePage ux:Class="HomePage">
+	<JavaScript File="HomePageScript.js" />
+	
+	<Router ux:Dependency="router" />
+	<Visual ux:Dependency="navBar" />
+
+	<NavBarTitle navBar="navBar" BoldText="TUESDAY" Text="January 1, 2016" />
+
+	<ScrollView>
+		<StackPanel>
+			<Text>this is homepage</Text>
+			<BoldText>Latest News</BoldText>
+			<Each Items="{news}">
+				<Text>{label}</Text>
+			</Each>
+			<BoldText>My Devices</BoldText>
+			<Each Items="{devices}">
+				<Text>{label}</Text>
+			</Each>
+			<NativeViewHost>
+			    <Button Text="Scan nearby devices" Clicked="{scanDevices}"/>
+			</NativeViewHost>
+		</StackPanel>
+	</ScrollView>
+</BasePage>

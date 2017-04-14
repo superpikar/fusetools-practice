@@ -1,0 +1,22 @@
+{
+  "Packages": [
+    "Fuse",
+    "FuseJS"
+  ],
+  "Includes": [
+    "MyApp.ux:UXFile",
+    "Share.uno",
+    "AdMob.Android.uno"
+  ],
+  "Projects": [
+    "fuse_modules\\bolav\\fuse-homescreen\\homescreen_include.unoproj"
+  ],
+  "Excludes": [
+    "fuse_modules/"
+  ],
+  "FusePM": {
+    "Dependencies": [
+      "https://github.com/bolav/fuse-homescreen"
+    ]
+  }
+}

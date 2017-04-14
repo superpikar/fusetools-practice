@@ -1,0 +1,18 @@
+<BasePage ux:Class="ProfilePage">
+	<JavaScript>
+		exports.gotoActivity = function() {
+			router.push("activity");
+		}
+	</JavaScript>
+
+	<Router ux:Dependency="router" />
+	<Visual ux:Dependency="navBar" />
+
+	<NavBarTitle navBar="navBar" BoldText="PROFILE:" Text="MYNAME" />
+
+	<ScrollView>
+		<StackPanel>
+			<Text>this is profile page</Text>
+		</StackPanel>
+	</ScrollView>
+</BasePage>
